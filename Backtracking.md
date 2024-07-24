@@ -1,0 +1,191 @@
+- Root (start at M[0][0])
+  - M[0][1]
+    - M[1][2]
+      - M[2][3]
+        - M[3][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[3][5]
+          - M[5][4]
+            - Can't proceed further, M[4][x] has no valid options
+      - M[2][4]
+        - M[4][5]
+          - M[5][3]
+            - Can't proceed further, M[3][x] has no valid options
+        - M[4][0]
+          - Can't proceed further, M[0][x] has no valid options
+      - M[2][5]
+        - M[5][4]
+          - Can't proceed further, M[4][x] has no valid options
+        - M[5][3]
+          - Can't proceed further, M[3][x] has no valid options
+    - M[1][3]
+      - M[3][2]
+        - M[2][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][1]
+            - Can't proceed further, M[1][x] has no valid options
+        - M[2][5]
+          - M[5][4]
+            - Can't proceed further, M[4][x] has no valid options
+          - M[5][0]
+            - End (completed path)
+    - M[1][4]
+      - M[4][2]
+        - M[2][3]
+          - M[3][5]
+            - M[5][0]
+              - End (completed path)
+          - M[3][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[2][5]
+          - M[5][3]
+            - Can't proceed further, M[3][x] has no valid options
+          - M[5][0]
+            - End (completed path)
+      - M[4][3]
+        - M[3][5]
+          - M[5][0]
+            - End (completed path)
+        - M[3][0]
+          - Can't proceed further, M[0][x] has no valid options
+    - M[1][5]
+      - M[5][2]
+        - M[2][3]
+          - M[3][4]
+            - M[4][0]
+              - Can't proceed further, M[0][x] has no valid options
+          - M[3][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[2][4]
+          - M[4][3]
+            - M[3][0]
+              - Can't proceed further, M[0][x] has no valid options
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
+  - M[0][2]
+    - M[2][1]
+      - M[1][3]
+        - M[3][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[3][0]
+          - Can't proceed further, M[0][x] has no valid options
+      - M[1][4]
+        - M[4][3]
+          - M[3][5]
+            - M[5][0]
+              - End (completed path)
+          - M[3][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[4][0]
+          - Can't proceed further, M[0][x] has no valid options
+    - M[2][3]
+      - M[3][1]
+        - M[1][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[1][0]
+          - End (completed path)
+      - M[3][4]
+        - M[4][5]
+          - M[5][0]
+            - End (completed path)
+        - M[4][0]
+          - Can't proceed further, M[0][x] has no valid options
+    - M[2][4]
+      - M[4][3]
+        - M[3][5]
+          - M[5][0]
+            - End (completed path)
+        - M[3][0]
+          - Can't proceed further, M[0][x] has no valid options
+      - M[4][5]
+        - M[5][3]
+          - Can't proceed further, M[3][x] has no valid options
+        - M[5][0]
+          - End (completed path)
+  - M[0][3]
+    - M[3][1]
+      - M[1][2]
+        - M[2][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[2][0]
+          - End (completed path)
+      - M[1][4]
+        - M[4][2]
+          - M[2][5]
+            - M[5][0]
+              - End (completed path)
+          - M[2][0]
+            - End (completed path)
+        - M[4][0]
+          - Can't proceed further, M[0][x] has no valid options
+    - M[3][2]
+      - M[2][1]
+        - M[1][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[1][0]
+          - End (completed path)
+      - M[2][4]
+        - M[4][5]
+          - M[5][0]
+            - End (completed path)
+        - M[4][0]
+          - Can't proceed further, M[0][x] has no valid options
+  - M[0][4]
+    - M[4][1]
+      - M[1][2]
+        - M[2][3]
+          - M[3][5]
+            - M[5][0]
+              - End (completed path)
+          - M[3][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[2][0]
+          - End (completed path)
+      - M[1][3]
+        - M[3][2]
+          - M[2][5]
+            - M[5][0]
+              - End (completed path)
+          - M[2][0]
+            - End (completed path)
+        - M[3][0]
+          - Can't proceed further, M[0][x] has no valid options
+    - M[4][2]
+      - M[2][1]
+        - M[1][3]
+          - M[3][5]
+            - M[5][0]
+              - End (completed path)
+          - M[3][0]
+            - Can't proceed further, M[0][x] has no valid options
+        - M[1][0]
+          - End (completed path)
+      - M[2][3]
+        - M[3][4]
+          - M[4][5]
+            - M[5][0]
+              - End (completed path)
+          - M[4][0]
+            - Can't proceed further, M[0][x] has no valid options
